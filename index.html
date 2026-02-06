@@ -256,6 +256,20 @@
             padding: 30px 20px 40px;
             opacity: 0.8;
         }
+
+        .two-col {
+            display: flex;
+            gap: 30px;
+        }
+
+        .left-box,
+        .right-box {
+            flex: 2;
+        }
+
+        .sm {
+            width: 40px;
+        }
     </style>
 </head>
 
@@ -359,12 +373,53 @@
 
     <section id="contact" class="glass">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="two-col">
+            <div class="left-box">
+                <form style="margin-right: 0%; max-width: 300px;">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="right-box">
+
+                <ul style="margin-top: 80px; margin-left: 70px;">
+                    <li>
+                        <font style="font-family: 'Orbitron', sans-serif;">Email : </font>
+                        <font
+                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                            maliyadevaadarshainnovation@gmail.com
+                        </font>
+                    </li>
+                    <li>
+                        <font style="font-family: 'Orbitron', sans-serif;">Tel : </font>
+                        <font
+                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                            0775271146 (Kavindu)
+                        </font>
+                    </li>
+                    <li>
+                        <font style="font-family: 'Orbitron', sans-serif;">Address : </font>
+                        <font
+                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                            Wahara, Kurunegala
+                        </font>
+                    </li>
+                </ul>
+                <div>
+                    <br>
+                    <br>
+                    <center>
+                        <img src="facebook.png" class="sm">
+                        <img src="instagram (1).png" class="sm">
+                        <img src="youtube.png" class="sm">
+                        <img src="tiktok.png" class="sm">
+                    </center>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
@@ -374,6 +429,7 @@
     </section>
 
     <script>
+        
         const cursor = document.querySelector(".cursor");
 
         document.addEventListener("mousemove", e => {
@@ -421,7 +477,15 @@
             }, 600)
         });
     </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJCB8Q9NDV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-EJCB8Q9NDV');
+</script>
 </body>
 
 </html>

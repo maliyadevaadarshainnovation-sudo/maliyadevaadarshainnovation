@@ -269,6 +269,47 @@
 
         .sm {
             width: 40px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            display: grid;
+            gap: 25px;
+        }
+
+
+        .info-card h3 {
+            margin-bottom: 18px;
+            font-size: 1rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            font-size: 0.85rem;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            background: #1b8f4e;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -375,49 +416,74 @@
         <h2>Contact Us</h2>
         <div class="two-col">
             <div class="left-box">
-                <form style="margin-right: 0%; max-width: 300px;">
+                <form style="align-items: center; max-width: 300px;">
                     <input type="text" placeholder="Your Name" required />
                     <input type="email" placeholder="Your Email" required />
                     <textarea rows="5" placeholder="Your Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
-            <div class="right-box">
 
-                <ul style="margin-top: 80px; margin-left: 70px;">
-                    <li>
-                        <font style="font-family: 'Orbitron', sans-serif;">Email : </font>
-                        <font
-                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-                            maliyadevaadarshainnovation@gmail.com
-                        </font>
-                    </li>
-                    <li>
-                        <font style="font-family: 'Orbitron', sans-serif;">Tel : </font>
-                        <font
-                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-                            0775271146 (Kavindu)
-                        </font>
-                    </li>
-                    <li>
-                        <font style="font-family: 'Orbitron', sans-serif;">Address : </font>
-                        <font
-                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-                            Wahara, Kurunegala
-                        </font>
-                    </li>
-                </ul>
-                <div>
-                    <br>
-                    <br>
-                    <center>
-                        <img src="facebook.png" class="sm">
-                        <img src="instagram (1).png" class="sm">
-                        <img src="youtube.png" class="sm">
-                        <img src="tiktok.png" class="sm">
-                    </center>
+            <div class="right-box" class="contact-wrapper">
+
+                <div class="info-card">
+                    <h3>📞 Contact Numbers</h3>
+
+                    <div class="info-row">
+                        <span class="icon">👤</span>
+                        <div><b>President:</b> +94 77 527 1146 (Kavindu)</div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="icon">📋</span>
+                        <div><b>Secretary:</b> 000000000</div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="icon">👨‍🏫</span>
+                        <div><b>Teacher:</b> +94 71 353 4819</div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="icon">🏢</span>
+                        <div><b>School Office:</b> +94372223802</div>
+                    </div>
+                </div>
+                <br>
+                <div class="info-card">
+                    <h3>✉️ Email & Web</h3>
+
+                    <div class="info-row">
+                        <span class="icon">📧</span>
+                        <div><b>Email:</b> maliyadevaadarshainnovation@gmail.com</div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="icon">🌐</span>
+                        <div><b>Website:</b> </div>
+                    </div>
+                </div>
+                <br>
+                <div class="info-card">
+                    <h3>📍 Address</h3>
+                    <p>
+                        Maliyadeva Model School<br>
+                        Colombo Road<br>
+                        Wehera, Kurunegala, Sri Lanka
+                    </p>
                 </div>
             </div>
+        </div>
+        <div>
+            <br>
+            <br>
+            <center>
+                <img src="facebook.png" class="sm">
+                <img src="instagram (1).png" class="sm">
+                <a href="www.youtube.com/@maliyadevaadarshainnovation">
+                    <img src="youtube.png" class="sm"></a>
+                <img src="tiktok.png" class="sm">
+            </center>
         </div>
 
     </section>
@@ -429,7 +495,7 @@
     </section>
 
     <script>
-        
+
         const cursor = document.querySelector(".cursor");
 
         document.addEventListener("mousemove", e => {
@@ -477,15 +543,15 @@
             }, 600)
         });
     </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJCB8Q9NDV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJCB8Q9NDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-EJCB8Q9NDV');
-</script>
+        gtag('config', 'G-EJCB8Q9NDV');
+    </script>
 </body>
 
 </html>

@@ -246,6 +246,33 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
+        .pdf {
+            padding: 12px;
+            width: 350px;
+            height: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: rgba(255, 217, 0, 0.479);
+            backdrop-filter: blur();
+            -webkit-backdrop-filter: blur();
+            border: 1px solid rgba(255, 255, 255, 0.411);
+            box-shadow: 0 8px 32px rgba(45, 0, 150, 0.507);
+            margin: auto;
+            display: grid;
+        }
+
+        .pdfimage {
+            width: 35px;
+        }
+
+        .rules {
+            color: #000000;
+            font-size: 1.45rem;
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+        }
+
         button:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(0, 234, 255, 0.4);
@@ -394,7 +421,24 @@
         <form id="regForm">
 
             <button type="submit">Register Now</button>
+            <br>
         </form>
+        <div>
+            <button class="pdf" onclick="window.open('Rules (1).pdf', '_blank')">
+                <div>
+                    <div>
+                        <center><img src="pdf-file.png" class="pdfimage"></center>
+                    </div>
+                    <div>
+                    <center>
+                        <h3 class="rules">RULES & GUIDELINES</h3>
+                    </center>
+                    </div>
+
+                </div>
+            </button>
+        </div>
+
 
         <div id="thankYou" style="display:none; text-align:center; padding:50px;">
             <center>
@@ -405,6 +449,7 @@
                 <p style="margin-top:18px; opacity:0.95; font: size 0.85rem;">Your registration was successful.<br>
                     Stay tuned for exciting updates about the Water Rocket Event 🚀</p>
             </center>
+
         </div>
     </section>
 

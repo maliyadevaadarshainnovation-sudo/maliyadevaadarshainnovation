@@ -248,7 +248,7 @@
 
         .pdf {
             padding: 12px;
-            width: 350px;
+            width: 275px;
             height: 100px;
             border-radius: 10px;
             cursor: pointer;
@@ -268,7 +268,7 @@
 
         .rules {
             color: #000000;
-            font-size: 1.45rem;
+            font-size: 1.2rem;
             font-weight: bold;
             font-family: 'Orbitron', sans-serif;
         }
@@ -417,22 +417,23 @@
                 <h3 id="seconds">00</h3><span>Seconds</span>
             </div>
         </div>
-
-        <form id="regForm">
-
-            <button type="submit">Register Now</button>
-            <br>
-        </form>
         <div>
-            <button class="pdf" onclick="window.open('Rules (1).pdf', '_blank')">
+            <form id="regForm">
+
+                <button type="submit">Register Now</button>
+                <br>
+            </form>
+        </div>
+        <div>
+            <button class="pdf" onclick="window.open('Rules (1).pdf', '_blank')" id="pdf">
                 <div>
                     <div>
                         <center><img src="pdf-file.png" class="pdfimage"></center>
                     </div>
                     <div>
-                    <center>
-                        <h3 class="rules">RULES & GUIDELINES</h3>
-                    </center>
+                        <center>
+                            <h3 class="rules">RULES & GUIDELINES</h3>
+                        </center>
                     </div>
 
                 </div>
@@ -449,6 +450,22 @@
                 <p style="margin-top:18px; opacity:0.95; font: size 0.85rem;">Your registration was successful.<br>
                     Stay tuned for exciting updates about the Water Rocket Event 🚀</p>
             </center>
+            <br>
+            <br>
+            <div>
+                <button class="pdf" onclick="window.open('Rules (1).pdf', '_blank')" id="pdf">
+                    <div>
+                        <div>
+                            <center><img src="pdf-file.png" class="pdfimage"></center>
+                        </div>
+                        <div>
+                            <center>
+                                <h3 class="rules">RULES & GUIDELINES</h3>
+                            </center>
+                        </div>
+
+                    </div>
+            </div>
 
         </div>
     </section>
@@ -491,7 +508,7 @@
 
                 <div class="info-row">
                     <span class="icon">🌐</span>
-                    <div><b>Website:</b> </div>
+                    <div><b>Website:</b> www.maliyadevaadarshainnovation.com</div>
                 </div>
             </div>
             <br>
@@ -573,15 +590,18 @@
         // Registration submit effect (no countdown change)
         const form = document.getElementById('regForm');
         const thankYou = document.getElementById('thankYou');
+        const button = document.getElementById('pdf')
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             form.style.display = 'none';
+            button.style.display = 'none';
             thankYou.style.display = 'block';
             setTimeout(() => {
                 window.open("https://forms.gle/7rsExvbKzCVeaxg1A", "_blank");
             }, 600)
         });
+
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJCB8Q9NDV"></script>
